@@ -16,7 +16,7 @@ You can add missing functionality by writing a piece of javascript code, then ex
 Nice, now you know the basics of how to write and execute an Illustrator script and how to investigate information about your document using the console. Also notice that we have a global `app` variable available for us at all times. It holds all information about the current state of Illustrator with all its open documents and the graphical elements living within them.
 
 #### Step-by-step script reference
-There's an accompanying git repository that has all the ready-to-use scripts we will create here. You can cross-check each individual step with your own script. In the terminal, browse to your project folder and type  `git clone https://github.com/s-haensch/illustrator-scripting-beginner.git`.  
+There's an accompanying git repository, that has all the ready-to-use scripts we will create here. You can cross-check each individual step with your own script. In the terminal, browse to your project folder and type  `git clone https://github.com/s-haensch/illustrator-scripting-beginner.git`.  
 
 The steps will be indicated like so:  
 _script reference:_ `git checkout [name-of-step]`  
@@ -48,9 +48,7 @@ for (s = 0; s < selection.length; s++) {
 ```
 _script reference:_ `git checkout count-lines`
 
-Great! Now we already know one crucial information: it tells us how many lines a text frame includes. That number will also be the number of times that we create a new text frame on the artboard, each one only with the content of one line.
-
-
+Great! Now we already know one crucial information: it tells us how many lines a text frame includes. That number will also be the number of times that we create a new text frame on the artboard, each one only with the content of one line:
 ```javascript
 var doc = app.activeDocument;
 var selection = doc.selection;
@@ -114,9 +112,9 @@ for (i = 0; i < selection.length; i++) {
 ```
 _script reference:_ `git checkout divide-text-2`
 
-That's it! We now have a working script that spares us the effort of cutting and pasting every single line of a list that we copied into Illustrator. With our handmade scripts, there's no more dull and repetitive clickwork to be done. Just foralize what you would do by hand into some lines of code and you will save yourself a big deal of time.  
+That's it! We now have a working script that spares us the effort of cutting and pasting every single line of a list that we copied into Illustrator. With our handmade scripts, there's no more dull and repetitive clickwork to be done. Just formalize what you would do by hand into some lines of code and you will save yourself tons of time.  
 
-You can find the complete JavaScript reference and other useful resources in the [scription section][url-reference] at Adobe. Play around with these methods and the next time you find yourself doing something again and again by hand, have a look into the reference and see if there's a method that you can use to automate that workload.
+You can find the complete JavaScript reference and other useful resources in the [scripting section][url-reference] at Adobe. Play around with these methods and the next time you find yourself doing something again and again by hand, have a look into the reference and see if there's a method that you can use to automate that workload.
 
 
 [url-reference]: http://www.adobe.com/devnet/illustrator/scripting.html
